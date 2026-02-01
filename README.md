@@ -29,21 +29,17 @@ This project runs **fully locally** using **Ollama + LLaMA 3**, with **no paid A
 ## 📦 Setup Instructions
 
 ### 1️⃣ Install Ollama
-```bash
 brew install ollama
 ollama pull llama3
 ollama serve
 ### 2️⃣ Clone Repository
-```bash
 git clone https://github.com/<vamshi671>/rag-langchain.git
 cd rag-langchain
 ### 3️⃣ Create Virtual Environment
-```bash
 python -m venv rag-env
 source rag-env/bin/activate
 pip install -r requirements.txt
 ### 4️⃣ Run the Application
-```bash
 streamlit run app.py
 ### 5️⃣ Use the App
 Upload a PDF document

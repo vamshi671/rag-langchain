@@ -30,7 +30,7 @@ A **Retrieval-Augmented Generation (RAG)** application that allows users to **up
 ---
 
 ## 📂 Project Structure
-
+```text
 rag-langchain/
 │
 ├── data/                # Sample PDFs
@@ -54,11 +54,30 @@ rag-langchain/
 brew install ollama
 ollama pull llama3
 ollama serve
-Keep Ollama running in the background.
+```
 2️⃣ Clone the Repository
+```bash
+git clone https://github.com/vamshi671/rag-langchain.git
+cd rag-langchain
+```
+3️⃣ Create Virtual Environment
+```bash
 python -m venv rag-env
 source rag-env/bin/activate
 pip install -r requirements.txt
-4️⃣ Run the Application
+```
+4️⃣ Run the Application'
+```bash
 streamlit run app.py
-Open in your browser:
+```
+🐳  Docker
+```bash
+docker build -t rag-chat-app .
+docker run -p 8501:8501 rag-chat-app
+```
+
+
+
+
+
+

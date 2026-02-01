@@ -49,30 +49,5 @@ rag-langchain/
 ├── Dockerfile
 ├── .gitignore
 └── README.md
-## 📦 Setup Instructions
 
-### 1️⃣ Install Ollama
 
-```bash
-brew install ollama
-ollama pull llama3
-ollama serve
-2️⃣ Clone the Repository
-git clone https://github.com/vamshi671/rag-langchain.git
-cd rag-langchain
-3️⃣ Create Virtual Environment
-python -m venv rag-env
-source rag-env/bin/activate
-pip install -r requirements.txt
-4️⃣ Run the Application
-streamlit run app.py
-Open in your browser::
-5️⃣ Use the App
-
-Upload a PDF document
-
-Ask questions in natural language
-
-Get answers strictly from the document
-
-Expand responses to see source references

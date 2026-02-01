@@ -1,0 +1,15 @@
+# Python virtual environment
+rag-env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log

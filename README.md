@@ -3,7 +3,7 @@
 A **Retrieval-Augmented Generation (RAG)** application that allows users to **upload PDF documents** and ask questions grounded **strictly in the document content**.
 
 🔒 Fully local & private  
-⚡ Powered by Ollama + LLaMA 3  
+⚡ Powered by **Ollama + LLaMA 3**  
 
 ---
 
@@ -14,24 +14,23 @@ A **Retrieval-Augmented Generation (RAG)** application that allows users to **up
 - 📚 Answers grounded only in uploaded documents
 - 🔍 Source references with page numbers
 - 🖥️ Clean Streamlit UI
-- 📴 Fully offline 
+- 📴 Fully offline (no paid APIs)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python  
-- Streamlit  
-- LangChain  
-- FAISS  
-- Sentence Transformers  
+- Python
+- Streamlit
+- LangChain
+- FAISS
+- Sentence Transformers
 - Ollama (LLaMA 3)
 
 ---
 
 ## 📂 Project Structure
 
-```text
 rag-langchain/
 │
 ├── data/                # Sample PDFs
@@ -50,4 +49,16 @@ rag-langchain/
 ├── .gitignore
 └── README.md
 
-
+### 1️⃣ Install Ollama
+```bash
+brew install ollama
+ollama pull llama3
+ollama serve
+Keep Ollama running in the background.
+2️⃣ Clone the Repository
+python -m venv rag-env
+source rag-env/bin/activate
+pip install -r requirements.txt
+4️⃣ Run the Application
+streamlit run app.py
+Open in your browser:
